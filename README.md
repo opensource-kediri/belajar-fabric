@@ -35,7 +35,7 @@ Setelah berhasil menggandakan (clone) source code, ikuti langkah tahap demi taha
 
 Berikut penjelasan setiap tahapan.
 
-- Tahap #1
+- Bagian #1
 
 Deskripsi : Tahapan ini berisi source sederhana dalam implementasi di fabric.
 
@@ -74,9 +74,9 @@ Berikut contohnya:
 fananimi-macbook:belajar-fabric fanani$ fab -H fanani@tuxhero.com hostname
 [fanani@tuxhero.com] Executing task 'hostname'
 [fanani@tuxhero.com] run: hostname
-[fanani@tuxhero.com] Login password for 'fanani': 
+[fanani@tuxhero.com] Login password for 'fanani':
 [fanani@tuxhero.com] out: tuxhero
-[fanani@tuxhero.com] out: 
+[fanani@tuxhero.com] out:
 
 -------------------------------
 hostname : tuxhero
@@ -84,8 +84,12 @@ hostname : tuxhero
 
 Done.
 Disconnecting from tuxhero.com... done.
-fananimi-macbook:belajar-fabric fanani$ 
+fananimi-macbook:belajar-fabric fanani$
 ```
+
+- Bagian #2 dan seterusnya
+
+Menyusul dan masih di diskusikan di HipChat Channel.
 
 Tanya Jawab
 -----------
