@@ -41,7 +41,7 @@ Deskripsi : Tahapan ini berisi source sederhana dalam implementasi di fabric.
 
 Caranya:
 
-`git checkout chapter-1`
+`git checkout chapter-01`
 
 Kamu bisa lihat isi source code nya masih sangat sederhana.
 
