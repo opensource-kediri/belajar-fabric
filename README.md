@@ -24,12 +24,14 @@ Installasi
 
 `$ sudo pip install fabric`
 
+`$ sudo apt-get install openssh-server`
+
 
 Cara Mengikuti Materi Ini
 -------------------------
 - Clone Source Code
 
-`$ git clone git@github.com:opensource-kediri/belajar-fabric.git`
+`$ git clone http@github.com/opensource-kediri/belajar-fabric.git`
 
 Setelah berhasil menggandakan (clone) source code, ikuti langkah tahap demi tahap dengan cara melakukan checkout setiap tag.
 
