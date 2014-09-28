@@ -14,24 +14,25 @@ Sebelum melakukan installasi, pastikan kamu sudah menyiapkan tools di bawah:
 Installasi
 ----------
 
-`$ sudo apt-get install python-dev python-setuptools`
+```
+$ sudo apt-get install python-dev python-setuptools
 
-`$ sudo easy_install pip`
+$ sudo easy_install pip
 
-`$ sudo pip install pycrypto`
+$ sudo pip install pycrypto
 
-`$ sudo pip install nose`
+$ sudo pip install nose
 
-`$ sudo pip install fabric`
+$ sudo pip install fabric
 
-`$ sudo apt-get install openssh-server`
+$ sudo apt-get install openssh-server
 
 
 Cara Mengikuti Materi Ini
 -------------------------
 - Clone Source Code
 
-`$ git clone http@github.com/opensource-kediri/belajar-fabric.git`
+`$ git clone https://github.com/opensource-kediri/belajar-fabric.git`
 
 Setelah berhasil menggandakan (clone) source code, ikuti langkah tahap demi tahap dengan cara melakukan checkout setiap tag.
 
@@ -98,6 +99,27 @@ Caranya:
 `git checkout chapter-02`
 
 Kemudian coba eksekusi dengan cara yang sama seperti chapter sebelumnya dengan mengubah <nama_function> nya saja menjadi `upgrade_os` .
+
+Berikut contohnya :
+
+```
+entirsaif@saifulindo:~/coding/belajar-fabric$ fab -H root@saifulindo upgrade_os
+[root@saifulindo] Executing task 'upgrade_os'
+[root@saifulindo] run: apt-get update
+[root@saifulindo] Login password for 'root': 
+[root@saifulindo] out: 
+[root@saifulindo] out: 
+[root@saifulindo] out: 0% [Working]
+....
+..
+[root@saifulindo] out: Reading package lists... Done
+[root@saifulindo] out: 
+[root@saifulindo] out: 
+
+Done.
+Disconnecting from root@saifulindo... done.
+
+```
 
 - Bagian 3 dan seterusnya (on progress)
 

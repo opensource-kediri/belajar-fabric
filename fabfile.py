@@ -10,5 +10,5 @@ def ping_google():
     run('ping -c 4 google.com')
 
 def upgrade_os():
-   sudo('apt-get update')
-   sudo('apt-get upgrade')
+    run('apt-get update')
+    run('apt-get upgrade')
