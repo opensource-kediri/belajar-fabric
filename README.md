@@ -27,6 +27,7 @@ $ sudo pip install fabric
 
 $ sudo apt-get install openssh-server
 
+```
 
 Cara Mengikuti Materi Ini
 -------------------------
@@ -88,6 +89,7 @@ hostname : tuxhero
 Done.
 Disconnecting from tuxhero.com... done.
 fananimi-macbook:belajar-fabric fanani$
+
 ```
 
 - Bagian #2 (menggunakan sudo)
