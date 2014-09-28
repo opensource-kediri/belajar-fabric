@@ -37,7 +37,7 @@ Setelah berhasil menggandakan (clone) source code, ikuti langkah tahap demi taha
 
 Berikut penjelasan setiap tahapan.
 
-- Bagian #1
+- Bagian #1 (hello world)
 
 Deskripsi : Tahapan ini berisi source sederhana dalam implementasi di fabric.
 
@@ -89,7 +89,17 @@ Disconnecting from tuxhero.com... done.
 fananimi-macbook:belajar-fabric fanani$
 ```
 
-- Bagian #2 dan seterusnya
+- Bagian #2 (menggunakan sudo)
+
+Deskripsi: menggunakan `sudo` untuk menjalankan command sebagai super user.
+
+Caranya:
+
+`git checkout chapter-02`
+
+Kemudian coba eksekusi dengan cara yang sama seperti chapter sebelumnya dengan mengubah <nama_function> nya saja menjadi `upgrade_os` .
+
+- Bagian 3 dan seterusnya (on progress)
 
 Menyusul dan masih di diskusikan di HipChat Channel.
 
