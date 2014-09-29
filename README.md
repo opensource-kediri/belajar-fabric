@@ -1,7 +1,7 @@
 belajar-fabric
 ==============
 
-Fabric merupakan sebuah pustaka (library) Python (2.5-2.7) dan *command line tool* untuk *streamlining script* menggunakan SSH yang bermafaat sebagai alat bantu penyebaran (*deployment*) atau juga dapat membantu pekerjaan yang berhubungan dengan *System Administration*.
+Fabric merupakan sebuah pustaka (library) Python (2.5-2.7) dan *command line tool* untuk *streamlining script* menggunakan SSH yang bermafaat sebagai alat bantu penyebaran (*deployment*) atau juga dapat membantu pekerjaan yang berhubungan dengan *System Administration*. lihat [docs.fabfile.org/][df]
 
 Kebutuhan Sistem
 ----------------
@@ -35,9 +35,10 @@ Cara Mengikuti Materi Ini
 
 `$ git clone https://github.com/opensource-kediri/belajar-fabric.git`
 
-Setelah berhasil menggandakan (clone) source code, ikuti langkah tahap demi tahap dengan cara melakukan checkout setiap tag.
+Setelah berhasil menggandakan (clone) source code, ikuti langkah tahap demi tahap dengan cara melakukan pulling setiap chapter kemudian eksekusi fungsion fabric-nya.
 
 Berikut penjelasan setiap tahapan.
+----------------------------------
 
 - Bagian #1 (hello world)
 
@@ -45,28 +46,28 @@ Deskripsi : Tahapan ini berisi source sederhana dalam implementasi di fabric.
 
 Caranya:
 
-`git checkout chapter-01`
+`git pull https://github.com/opensource-kediri/belajar-fabric.git master`
 
-Kamu bisa lihat isi source code nya masih sangat sederhana.
+Kamu bisa lihat isi source code-nya masih sangat sederhana.
 
 `$ cat fabfile.py`
 
 ```
 from fabric.api import run
 
-def hostname():
+def hostname(): # nama fungsi
     hostname = run('hostname')
     print '-------------------------------'
     print 'hostname : %s' %hostname
     print '-------------------------------'
 
 
-def ping_google():
+def ping_google(): # nama fungsi
     run('ping -c 4 google.com')
 
 ```
 
-Kemudian coba eksekusi dengan cara
+Kemudian eksekusi fabric dengan cara :
 
 `$ fab -H user@<ip_atau_hostname> <nama_function>`
 
@@ -94,13 +95,25 @@ fananimi-macbook:belajar-fabric fanani$
 
 - Bagian #2 (menggunakan sudo)
 
-Deskripsi: menggunakan `sudo` untuk menjalankan command sebagai super user.
+Deskripsi: menggunakan `sudo` untuk menjalankan command sebagai super user, bagi pengguna distro linux yang tidak menggunakan sudo tinggal merubah source code-nya :
+
+```
+run(apt-get update)
+run(apt-get upgrade)
+```
+
+atau
+
+```
+sudo(apt-get update)
+sudo(apt-get upgrade)
+```
 
 Caranya:
 
-`git checkout chapter-02`
+`git pull https://github.com/opensource-kediri/belajar-fabric.git master`
 
-Kemudian coba eksekusi dengan cara yang sama seperti chapter sebelumnya dengan mengubah <nama_function> nya saja menjadi `upgrade_os` .
+Kemudian eksekusi dengan cara yang sama seperti chapter sebelumnya dengan mengubah <nama_function> nya saja menjadi `upgrade_os` .
 
 Berikut contohnya :
 
@@ -127,7 +140,10 @@ Disconnecting from root@saifulindo... done.
 
 Menyusul dan masih di diskusikan di HipChat Channel.
 
+
 Tanya Jawab
 -----------
 
 Untuk tanya jawab bisa di tanyakan di HipChat Channel berikut https://opensource-kediri.hipchat.com/invite/172646/bfdf1d83b070e0d304170b65647ca8a1
+
+[df] : http://docs.fabfile.org/
