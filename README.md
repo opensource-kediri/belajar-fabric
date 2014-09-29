@@ -1,7 +1,7 @@
 belajar-fabric
 ==============
 
-Fabric merupakan sebuah pustaka (library) Python (2.5-2.7) dan *command line tool* untuk *streamlining script* menggunakan SSH yang bermafaat sebagai alat bantu penyebaran (*deployment*) atau juga dapat membantu pekerjaan yang berhubungan dengan *System Administration*. lihat [docs.fabfile.org/][df]
+Fabric merupakan sebuah pustaka (library) Python (2.5-2.7) dan *command line tool* untuk *streamlining script* menggunakan SSH yang bermafaat sebagai alat bantu penyebaran (*deployment*) atau juga dapat membantu pekerjaan yang berhubungan dengan *System Administration*. lihat [docs.fabfile.org/][d]
 
 Kebutuhan Sistem
 ----------------
@@ -146,4 +146,4 @@ Tanya Jawab
 
 Untuk tanya jawab bisa di tanyakan di HipChat Channel berikut https://opensource-kediri.hipchat.com/invite/172646/bfdf1d83b070e0d304170b65647ca8a1
 
-[df] : http://docs.fabfile.org/
+[d]:http://docs.fabfile.org/
